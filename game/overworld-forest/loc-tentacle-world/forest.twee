@@ -1,9 +1,9 @@
 :: Tentacle Forest Enable
 <<effects>>
 <<set $tentacledisable to "f">>
-<span class="green">You steel your mind, and focus on the portal.</span> A mental barrier inside you breaks.
+<span class="green">당신은 마음을 가다듬고, 문에 집중한다.</span> 내면의 정신적 장벽이 부서진다.
 <br><br>
-<i><span class="lewd">Tentacles are now enabled.</span></i>
+<i><span class="lewd">촉수가 활기를 띤다.</span></i>
 <br><br>
 <<link [[다음|Tentacle Forest Entrance]]>><<set $tentacleEntrance to "hookah">><<endevent>><</link>>
 <br>
@@ -14,16 +14,16 @@
 <<set $tentacle_forest_lurker to []>>
 <<set $tentacle_forest_time to 0>>
 
-You awaken in a clearing, surrounded by giant tentacles. There are paths between them, snaking out of sight.
+당신은 거대한 촉수로 둘러싸인 채 황량한 평원에서 깨어난다. 촉수들 사이에는 눈에 띄지 않는 통로가 있다.
 <br><br>
 
-A warm breeze makes your hair stand on end. <span class="lewd">Your clothes are missing.</span>
+따뜻한 바람이 머리카락을 곤두세운다. <span class="lewd">당신의 옷이 사라졌다.</span>
 <br><br>
 
 <<if $arousal gte 6000>>
     <<set $arousal to 6000>>
 <</if>>
-<span class="red">An orgasm here could be dangerous.</span>
+<span class="red">이곳에서 오르가즘을 느끼는 것은 위험할 것이다.</span>
 <br><br>
 
 <<link [[다음|Tentacle Forest]]>><</link>>
@@ -32,7 +32,7 @@ A warm breeze makes your hair stand on end. <span class="lewd">Your clothes are 
 :: Tentacle Forest
 <<set $bus to "tentacle_forest_main">><<effects>>
 
-You are in the tentacle forest, in a clearing surrounded by giant tentacles, packed tight. Two viable paths lead away, one ascending, one descending.
+당신은 촉수 숲에 있으며, 평원은 빽빽한게 들어찬 거대한 촉수들로 둘러싸여있다. 오르막과 내리막 두 개의 길로 이어진다.
 <br><br>
 
 <<tentacle_forest_safe_orgasm>>
@@ -46,23 +46,23 @@ You are in the tentacle forest, in a clearing surrounded by giant tentacles, pac
 <<elseif $arousal gte 10000 and !$tentacle_forest_lurker.includes("defeated")>>
     <<tentacle_forest_orgasm_scene>>
 <<else>>
-    <<link [[Ascend (0:05)|Tentacle Forest Pool]]>><<tentacle_forest_pass 5>><</link>><<note "Move deeper into the forest" "lblue">>
+    <<link [[올라간다 (0:05)|Tentacle Forest Pool]]>><<tentacle_forest_pass 5>><</link>><<note "숲 안으로 이동한다" "lblue">>
     <br>
-    <<link [[Descend (0:05)|Tentacle Forest Stream]]>><<tentacle_forest_pass 5>><</link>><<note "Move deeper into the forest" "lblue">>
+    <<link [[내려간다 (0:05)|Tentacle Forest Stream]]>><<tentacle_forest_pass 5>><</link>><<note "숲 안으로 이동한다" "lblue">>
     <br><br>
-    <<link [[Climb (0:05)|Tentacle Forest Climb]]>><<tentacle_forest_pass 5>><</link>><<willpowerdifficulty 1 1200>>
+    <<link [[기어오른다 (0:05)|Tentacle Forest Climb]]>><<tentacle_forest_pass 5>><</link>><<willpowerdifficulty 1 1200>>
     <br><br>
-    Strange fruit hang from the thinner branches, within reach.
+    이상한 과일이 가느다란 가지에 매달려있다. 손에 닿을 듯 하다.
     <br>
-    <<link [[Eat (0:15)|Tentacle Forest Hands]]>><<tentacle_forest_pass 15>><</link>><<note "+ Hand skill?" "blue">>
+    <<link [[먹는다 (0:15)|Tentacle Forest Hands]]>><<tentacle_forest_pass 15>><</link>><<note "+ 손 기술?" "blue">>
     <br><br>
-    <<link [[Wake up|Tentacle Forest Wake]]>><</link>>
+    <<link [[깨어난다|Tentacle Forest Wake]]>><</link>>
 <</if>>
 
 :: Tentacle Forest Wake
 <<effects>>
 
-You think about the hookah parlour, and notice you can feel two bodies. One here in the tentacle forest, another lying on a cushion.
+당신은 물담배 응접실에 대해 생각한다. 그리고 두 개의 몸이 느껴지는 것을 깨닫는다. 하나는 촉수 숲에, 또 하나는 쿠션에 기대있다.
 <br><br>
 
 <<tentacle_forest_end_scene>>
@@ -71,35 +71,35 @@ You think about the hookah parlour, and notice you can feel two bodies. One here
 :: Tentacle Forest Orgasm
 <<effects>>
 
-You enter a cave beneath the forest through a fissure in the roof, and land on your <<bottom>> in a shallow pool of pink fluid.
+당신은 천장 틈새를 통해 숲 아래 동굴로 들어간다. 그리고 당신의 <<bottom_uro>> 얕은 분홍색 웅덩이에 착지한다.
 <br><br>
 
 <<if $tentacle_forest_lurker.includes("defeated")>>
-    You struggle to your feet. <span class="green">No creature emerges to greet you.</span> You climb the wall, and escape through a fissure in the ceiling.
+    당신은 발버둥친다. <span class="green">당신을 맞이하는 생명체는 없다.</span> 당신은 벽을 타, 천장의 틈새를 뚫고 탈출한다.
     <br><br>
 
     <<link [[다음|Tentacle Forest]]>><</link>>
     <br>
 <<else>>
 
-    A bulbous creature the size of a car squirms across the ceiling. It has no eyes, nor any other outward feature, save a gigantic maw. A large tongue emerges, tastes the air. The creature <span class="purple">lurches in your direction.</span>
+    자동차 크기의 구근 촉수가 천장을 가로질러 꿈틀거린다. 거대한 주둥이를 제외하면 눈이나 다른 외형적 특징은 없다. 거대한 혀가 나타나, 공기를 핥는다. 그 생명체는 <span class="purple">당신쪽으로 기울어진다.</span>
     <br><br>
 
     <<if !$tentacle_forest_lurker.includes("hide")>>
         <<set $skulduggerydifficulty to 500>>
-        <<link [[Hide under the fluid|Tentacle Forest Orgasm Hide]]>><<set $skulduggerydifficulty to 500>><</link>><<skulduggerydifficulty 500>>
+        <<link [[웅덩이 아래로 숨는다|Tentacle Forest Orgasm Hide]]>><<set $skulduggerydifficulty to 500>><</link>><<skulduggerydifficulty 500>>
         <br>
     <</if>>
     <<if !$tentacle_forest_lurker.includes("run")>>
-        <<link [[Run|Tentacle Forest Orgasm Run]]>><</link>><<athleticsdifficulty 1 800>>
+        <<link [[도망친다|Tentacle Forest Orgasm Run]]>><</link>><<athleticsdifficulty 1 800>>
         <br>
     <</if>>
     <<if !$tentacle_forest_lurker.includes("scare")>>
-        <<link [[Scare|Tentacle Forest Orgasm Scare]]>><</link>><<willpowerdifficulty 1 800>>
+        <<link [[위협한다|Tentacle Forest Orgasm Scare]]>><</link>><<willpowerdifficulty 1 800>>
         <br>
     <</if>>
     <<set $skulduggerydifficulty to 1000>>
-    <<link [[Lay an ambush|Tentacle Forest Orgasm Ambush]]>><<set $skulduggerydifficulty to 1000>><</link>><<skulduggerydifficulty>>
+    <<link [[매복한다|Tentacle Forest Orgasm Ambush]]>><<set $skulduggerydifficulty to 1000>><</link>><<skulduggerydifficulty>>
     <br>
 
 <</if>>
@@ -108,30 +108,30 @@ You enter a cave beneath the forest through a fissure in the roof, and land on y
 :: Tentacle Forest Orgasm Hide
 <<effects>>
 
-You dive beneath the fluid, hoping it will mask your scent.
+당신은 당신의 냄새가 가려지기를 바라며, 액체 아래로 잠수한다.
 <br><br>
 
 <<skulduggerycheck>>
 <<if $skulduggerysuccess is 1>>
 
-    The creature drops from the ceiling, landing in the thick liquid and sending a wave that lifts you, <span class="green">but you remain submerged.</span>
+    생명체가 천장 아래로 떨어지면서 걸죽한 액체에 파도를 일으켜 당신을 들어올리지만, <span class="green">당신은 여전히 액체에 잠겨있다.</span>
 	<br><br>
 
-    You hear the creature squirm away, but hold your breath for a while longer to be on the safe side.
+    생명체가 꿈틀대며 벗어나는 소리가 들리지만, 당신은 신중을 기하며 잠시 숨을 참는다.
     <br><br>
 
 	<<if $skulduggery lte ($skulduggerydifficulty + 100)>>
 		<<skulduggeryskilluse>>
 	<<else>>
-		<span class="blue">That was too easy. You didn't learn anything.</span>
+		<span class="blue">너무 쉬웠다. 당신은 아무것도 배우지 못했다.</span>
 		<br><br>
 	<</if>>
 
-    <i>The creature won't be fooled by that a second time. Another orgasm could be dangerous.</i>
+    <i>생명체는 두 번은 속지 않을 것이다. 다시 오르가즘을 느끼는 것은 위험할 것이다.</i>
     <<set $tentacle_forest_lurker.pushUnique("hide")>>
     <br><br>
 
-	You emerge from the goop, and look around. A slope leads up one of the rocky walls, leading to a crack in the ceiling. You climb it, and emerge in the tentacle forest.
+	당신은 찐득한 웅덩이에서 빠져나와, 주위를 둘러본다. 경사면이 바위로 된 벽 중 하나로 이어져, 천장의 틈을 향한다. 당신은 경사를 타고 올라가, 촉수숲으로 빠져나온다.
     <br><br>
 
     <<link [[다음|Tentacle Forest]]>><</link>>
@@ -139,13 +139,13 @@ You dive beneath the fluid, hoping it will mask your scent.
 
 <<else>>
 
-	The creature drops from the ceiling, landing in the thick liquid and sending a wave that <span class="red">lifts you clear from the goop.</span> The creature picks up your scent, and heads your way.
+	생명체가 천장 아래로 떨어지면서 걸죽한 액체에 파도를 일으켜, <span class="red">당신을 웅덩이 밖으로 들어올린다.</span> 생명체는 당신의 냄새를 알아차리고 당신을 향해 나.
 	<br><br>
 
 	<<if $skulduggery lte ($skulduggerydifficulty + 100)>>
 		<<skulduggeryskilluse>>
 	<<else>>
-		<span class="blue">That was too easy. You didn't learn anything.</span>
+		<span class="blue">너무 쉬웠다. 당신은 아무것도 배우지 못했다.</span>
 		<br><br>
 	<</if>>
 
@@ -157,24 +157,24 @@ You dive beneath the fluid, hoping it will mask your scent.
 :: Tentacle Forest Orgasm Run
 <<effects>>
 
-You turn and run as fast as the thick fluid allows, each step kicking forth dollops of the stuff. The cave shakes as the creature drops to the floor. You hear it squirming after you, but dare not spare a glance.
+당신은 걸죽한 액체가 허락하는 한 최대한 빠르게 돌아서 달려갔고, 한 걸음 내딛을 때마다 액체가 덩어리로 뿜어져 나온다. 생명체가 떨어지자 동굴이 흔들린다. 당신은 쫓아오는 소리가 들리지만, 눈길조차 주지 못한다.
 <br><br>
-There's a fissure in the ceiling up ahead. You should be able to reach the nearby rocks and climb up, but you hear the creature gaining ground. It slams against the floor once again, close enough that the ground shakes with a violent quake,
+앞쪽 천장에 균열이 있다. 당신은 근처 바위를 딛고 기어오를 수 있을테지만, 생명체가 주위에 있는 소리가 들린다. 생명체는 다시 바닥에 부딪히고, 땅이 심하게 흔들릴 정도로 가까이 있다.
 <<if $athleticsSuccess>>
-    <span class="green">but you manage to keep your footing.</span>
+    <span class="green">당신은 균형을 유지한다.</span>
     <br><br>
 
-    You clamber up the rocks and squeeze through the fissure, emerging back in the tentacle forest. It's much too tight for the creature to follow.
+    당신은 바위를 기어올라 틈새를 통해 촉수숲으로 빠져나온다. 생명체가 따라오기엔 너무 비좁다.
     <br><br>
     <<set $tentacle_forest_lurker.pushUnique("run")>>
-    <i>The creature has learned of your strengths. Running won't work a second time. Another orgasm could be dangerous.</i>
+    <i>생명체는 당신의 체력을 알아차렸다. 달리기는 두 번 다시 효과가 없을 것이다. 다시 오르가즘을 느끼는 것은 위험할 것이다.</i>
 
     <br><br>
 
     <<link [[다음|Tentacle Forest]]>><</link>>
     <br>
 <<else>>
-    <span class="red">sending you tumbling off your feet.</span>
+    <span class="red">당신은 발을 헛디뎌 넘어진다.</span>
     <br><br>
 
     <<link [[다음|Tentacle Forest Orgasm Defeat]]>><</link>>
@@ -185,23 +185,23 @@ There's a fissure in the ceiling up ahead. You should be able to reach the nearb
 <<effects>>
 
 <<if $willpowerSuccess>>
-    You charge at the creature, kicking great sloshes of fluid ahead of you. <span class="green">Your aggression startles the creature,</span> and it squirms away in fright.
+    당신은 생명체를 향해 돌진하며, 액체 덩어리를 강하게 찬다. <span class="green">당신의 공격성은 생명체를 놀래켰고 </span> 그것은 겁에 질려 몸을 움츠린다.
     <br><br>
 
     <<set $tentacle_forest_lurker.pushUnique("scare")>>
-    <i>The creature is inured to your tricks. Scaring it won't work a second time.</i>
+    <i>생명체는 당신의 속임수에 단련되었다. 위협은 두 번 다시 효과가 없을 것이다. </i>
     <br><br>
 
-    You climb the side of the cave, up to a fissure in the ceiling, and emerge in the tentacle forest.
+    당신은 동굴의 벽면을 따라 천장의 틈새까지 올라가서 촉수숲으로 빠져나온다.
     <br><br>
 
     <<link [[다음|Tentacle Forest]]>><</link>>
     <br>
 <<else>>
-    You charge at the creature, <span class="red">but the thick fluid slows you,</span> and you lose the element of surprise.<<gwillpower>><<willpower 3>>
+    당신은 생명체를 향해 돌진하지만, <span class="red">걸죽한 액체가 당신을 느리게 했고</span> 당신의 기습은 통하지 않았다. <<gwillpower>><<willpower 3>>
     <br><br>
 
-    It drops from the ceiling mere feet from you, sending a wave of fluid that knocks you on your <<bottom>>.
+    생명체는 당신에게서 불과 몇 피트 떨어진 천장에서 떨어지면서 액체의 파동을 일으켜 당신의 <<bottom_ul>> 때린다.
     <br><br>
 
     <<link [[다음|Tentacle Forest Orgasm Defeat]]>><</link>>
@@ -211,34 +211,34 @@ There's a fissure in the ceiling up ahead. You should be able to reach the nearb
 :: Tentacle Forest Orgasm Ambush
 <<effects>>
 
-You jump beneath the fluid, and thrash around like a wounded animal. The creature drops from the ceiling, making the ground quake, and squirms closer.
+당신은 웅덩이로 뛰어들어 부상당한 동물처럼 이리저리 뛰어다닌다. 생명체가 천장에서 떨어지면서 땅이 진동하고 몸을 비틀며 다가온다.
 <br><br>
 
 <<skulduggerycheck>>
 <<if $skulduggerysuccess is 1>>
     <<earnFeat "Lurker Beyond">>
-	You wait, continuing to flail and watching for any sign of weakness. <span class="green">Then you notice a pattern in its movements.</span> It licks the air constantly, tasting you, but stops whenever it shifts direction. It's masked by the chaotic squirming, but it can't move and turn at the same time.
+	당신은 계속해서 뛰어다니며 생명체가 약해질 때까지 지켜본다. <span class="green">당신은 패턴을 알아차린다.</span> 생명체는 끊임없이 공기를 핥으며 당신을 맛보지만, 방향을 틀때마다 멈춘다. 혼란스러운 움직임에 감춰져있지만 움직임과 동시에 방향을 틀 수는 없다.
 	<br><br>
 
-    Its maw is mere feet away. You launch yourself into motion, running around the creature's side. It turns as fast as it can, but far too slow for you. You're able to stay right behind it, where its body tapers into a tail.
+    생명체의 주둥이가 불과 몇 걸음 떨어진 곳에 있다. 당신은 그 생명체 옆을 돌아 달린다. 그것은 최대한 빨리 돌지만, 당신에게는 너무 느리다. 당신은 꼬리 모양으로 가늘어지는 몸통 바로 뒤에 붙어있을 수 있다.
     <br><br>
 
-    A thought strikes you. An impossible thought. But why not?
+    생각이 머리를 강타한다. 터무니없는 생각이다. 하지만 정말 그럴까?
     <br><br>
 
-    You grasp the tail with one hand and, with little required strength, hurl the creature across the cave. It collides with a wall, explodes, and showers the room with more fluid.
+    당신은 한 손으로 생명체의 꼬리를 붙잡고, 거의 힘을 들이지 않고 동굴 너머로 던진다. 생명체는 벽에 부딪혀 폭발하고, 동굴 안에 많은 액체를 흩뿌린다.
     <br><br>
 
-    The creature defeated, there's nothing stopping you from climbing to a fissure in the ceiling, and returning to the forest.
+    생명체는 패배했고, 당신이 천장의 틈새로 올라가 촉수숲으로 돌아가는 것을 막을 수 있는 것은 아무것도 없다.
     <br><br>
 
-    <span class="green"><i>The creature won't bother you again, should you have another orgasm.</i></span>
+    <span class="green"><i>당신이 다시 오르가즘을 느껴도, 생명체는 당신을 방해하지 않을 것이다. </i></span>
     <br><br>
     <<set $tentacle_forest_lurker.pushUnique("defeated")>>
 	<<if $skulduggery lte ($skulduggerydifficulty + 100)>>
 		<<skulduggeryskilluse>>
 	<<else>>
-		<span class="blue">That was too easy. You didn't learn anything.</span>
+		<span class="blue">너무 쉬웠다. 당신은 아무것도 배우지 못했다.</span>
 		<br><br>
 	<</if>>
 
@@ -247,16 +247,16 @@ You jump beneath the fluid, and thrash around like a wounded animal. The creatur
 
 <<else>>
 
-	You watch for any sign of weakness. The only discernable feature is that maw. Is it a weak spot?
+	당신은 생명체가 약해질 때까지 지켜본다. 유일하게 눈에 띄는 특징은 주둥이다. 그게 약점일까?
     <br><br>
 
-    <span class="red">There's no time to decide,</span> it's on you already. You lunge, fist first, at the creature. Your impotent blow is deflected by its rubbery hide, and the force knocks you on your <<bottom>>.
+    <span class="red">결정할 시간이 없다.</span> 이미 당신에게 달려있다. 당신은 생명체에게 주먹부터 날린다. 하지만 당신의 무력한 일격은 생명체의 질긴 가죽에 튕겨 나가고, 그 충격에 당신은 <<bottom_uro>> 고꾸라진다.
 	<br><br>
 
 	<<if $skulduggery lte ($skulduggerydifficulty + 100)>>
 		<<skulduggeryskilluse>>
 	<<else>>
-		<span class="blue">That was too easy. You didn't learn anything.</span>
+		<span class="blue">너무 쉬웠다. 당신은 아무것도 배우지 못했다.</span>
 		<br><br>
 	<</if>>
 
@@ -270,19 +270,19 @@ You jump beneath the fluid, and thrash around like a wounded animal. The creatur
 
 <<if $voredisable is "f">>
 
-    The creature scoops you face-first with its maw, lifts you into the air, and lets gravity slide you deeper. You push against the sides of its mouth for purchase, and stop it from sucking you any deeper than your waist.
+    생명체는 당신의 얼굴을 주둥이로 잡아 공중으로 들어 올리고, 중력은 당신을 더 깊이 미끄러트린다. 당신은 생명체의 입 옆면을 밀어내며 허리 밑으로 빨려 들어가지 않도록 막는다.
     <br><br>
-    A faint pink light illuminates the interior. The creature's tongue squirms over your face, then <<breasts>>. It slides between your body and its lip, squirming over your <<genitals>> and between your thighs until it licks your <<bottom>>.<<gggarousal>><<arousal 3000>>
+    희미한 분홍색 빛이 내부를 비춘다. 생명체의 혀가 당신의 얼굴과 <<breasts_rul>> 스친다. 그리고 당신의 몸과 자신의 입술사이로 미끄러져, 당신의 <<genitals_wa>> 허벅지 사이를 꿈틀거리며 당신의 <<bottom_ul>> 핥는다.<<gggarousal>><<arousal 3000>>
     <br><br>
-    Hooked between your thighs, the tongue tries to draw you deeper.
+    허벅지 사이에 끼어 있는 혀가 당신을 더 깊이 끌어들이려고 한다.
     <br><br>
 
     <<link [[다음|Tentacle Forest Orgasm Defeat 2]]>><</link>>
     <br>
 <<else>>
-The creature bares down on you, but then halts in its tracks. <span class="blue">Something is coming for you.</span> You feel it. The creature feels it too, and flees deeper into the cave.
+생명체는 당신을 향해 달려들다가, 이내 멈춰 선다. <span class="blue">무엇인가 당신을 향해 오고있다.</span> 당신은 그것을 알아차린다. 생명체도 알아차리고, 동굴 깊숙한 곳으로 도망친다.
 <br><br>
-Time parts to allow the newcomer's passage. It whirls around you, unravelling this reality.
+시간이 갈라져 이방인에게 길을 내어준다. 이내 당신을 감싸며 소용돌이치고, 세계가 무너진다.
 <br><br>
 
 <<link [[다음|Flats Hookah End]]>><<tentacleworldend>><</link>>
@@ -292,28 +292,28 @@ Time parts to allow the newcomer's passage. It whirls around you, unravelling th
 :: Tentacle Forest Orgasm Defeat 2
 <<effects>>
 
-The creature squeezes your bottom with its mouth as it pulls you deeper. You feel about for anything you can grasp, but the best you can find is a fleshy uvula hanging above.
+생명체는 당신의 엉덩이를 꽉 쥐며 더 깊이 끌어당긴다. 당신은 잡을 수 있는 것을 찾아 헤매지만, 가장 좋은 것은 위에 매달려 있는 두꺼운 목젖뿐이다.
 <br><br>
 
-Your raised arms leave your <<breasts>> exposed. Two tentacles emerge from deeper within the creature, snaking towards you.
+당신의 들어올린 팔이 당신의 <<breasts_rul>> 드러낸다. 생명체 내부 깊숙한 곳에서 두 개의 촉수가 나타나 당신을 향해 몰래 다가온다.
 <br><br>
 
-<<link [[Cover your chest|Tentacle Forest Orgasm Defeat Cover]]>><</link>>
+<<link [[가슴을 가린다|Tentacle Forest Orgasm Defeat Cover]]>><</link>>
 <br>
-<<link [[Cling|Tentacle Forest Orgasm Defeat Cling]]>><</link>>
+<<link [[매달린다|Tentacle Forest Orgasm Defeat Cling]]>><</link>>
 <br>
 
 
 :: Tentacle Forest Orgasm Defeat Cover
 <<effects>>
 
-You cover your <<breasts>>, saving them from the tentacles' attentions. Without your grasp on the uvula however, the tongue forces you the rest of the way into the creature's mouth, and down its gullet.
+당신은 당신의 <<breasts_rul>> 촉수의 관심으로부터 보호한다. 하지만 당신은 목젖을 잡지 못해, 생명체의 혀가 당신을 입 속 깊숙이 목구멍으로 밀어넣는다.
 <br><br>
 
-The walls press in, trapping you completely. They squeeze to a peculiar rhythm, pushing you deeper. Apertures on the walls squirt you with a sweet-smelling liquid, while others produce tendrils that grope and squirm, <span class="pink">leaving you more sensitive.</span><<genital_sensitivity 0.5>>
+육벽은 당신을 완전히 가두고, 기묘한 리듬으로 꽉 조여 당신을 더 깊이 밀어넣는다. 벽의 구멍들은 달콤한 향기가 나는 액체를 뿜어내고, 당신을 더듬고 꿈틀거리는 덩굴손을 만들어내, <span class="pink">당신을 더욱 민감하게 만든다.</span><<genital_sensitivity 0.5>>
 <br><br>
 
-It's too much for you. You pass out.
+이것은 당신에게 너무 벅찬 일이다. 당신은 기절한다.
 <br><br>
 
 <<link [[다음|Flats Hookah End]]>><<passout>><<tentacleworldend>><</link>>
@@ -322,19 +322,19 @@ It's too much for you. You pass out.
 :: Tentacle Forest Orgasm Defeat Cling
 <<effects>>
 
-You cling to the uvula, preventing the creature from pulling you any deeper, but allowing the tentacles to snake over and latch onto your <<breasts>>.
+당신은 목젖에 매달려 생명체가 당신을 더 깊이 끌어당기는 것을 막지만, 촉수가 뱀처럼 기어올라 당신의 <<breasts_(에)>> 달라붙는다.
 <br><br>
 
 <<if $lactating is 1 and $breastfeedingdisable is "f" and $milk_amount gte 1>>
-    They squeeze, sucking milk from your erect buds as the tongue pushes against your <<bottom>>.
+    그들은 혀로 당신의 <<bottom_ul>> 밀면서 당신의 꼿꼿한 젖꼭지에서 젖을 빨아들인다.
     <<set $milk_produced_stat += 800>>
     <<milk_amount -800>>
 <<else>>
-    They squeeze and knead your flesh as the tongue pushes against your <<bottom>>.
+    그들의 혀가 당신의 <<bottom_ul>>을 밀면서 당신의 살을 쥐어짜고 반죽한다.
 <</if>>
 <br><br>
 
-It's too much for you. You pass out.
+이것은 당신에게 너무 벅찬 일이다. 당신은 기절한다.
 <br><br>
 
 <<link [[다음|Flats Hookah End]]>><<passout>><<tentacleworldend>><</link>>
