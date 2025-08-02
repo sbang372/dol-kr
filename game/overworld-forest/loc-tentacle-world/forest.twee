@@ -322,7 +322,7 @@
 :: Tentacle Forest Orgasm Defeat Cling
 <<effects>>
 
-당신은 목젖에 매달려 생명체가 당신을 더 깊이 끌어당기는 것을 막지만, 촉수가 뱀처럼 기어올라 당신의 <<breasts_ (에)>> 달라붙는다.
+당신은 목젖에 매달려 생명체가 당신을 더 깊이 끌어당기는 것을 막지만, 촉수가 뱀처럼 기어올라 당신의 <<breasts_ 에>> 달라붙는다.
 <br><br>
 
 <<if $lactating is 1 and $breastfeedingdisable is "f" and $milk_amount gte 1>>
@@ -501,7 +501,7 @@
     <<link [[다음|Tentacle Forest Stream]]>><</link>>
     <br>
 <<else>>
-    당신은 한 마리를 낚아챈다. <span class="red">하지만 당신의 손아귀에서 벗어나 팔 위로 기어오른다.</span> 당신은 잡으려 하지만, 민달팽이는 당신의 가슴으로 뛰어올라 당신의 <<genitals_ (rul)>> 통해 미끄러진 뒤, 다시 개울로 뛰어든다.<<garousal>><<arousal 1000>>
+    당신은 한 마리를 낚아챈다. <span class="red">하지만 당신의 손아귀에서 벗어나 팔 위로 기어오른다.</span> 당신은 잡으려 하지만, 민달팽이는 당신의 가슴으로 뛰어올라 당신의 <<genitals_ rul>> 통해 미끄러진 뒤, 다시 개울로 뛰어든다.<<garousal>><<arousal 1000>>
     <br><br>
 
     <<link [[다음|Tentacle Forest Stream]]>><</link>>
