@@ -1138,7 +1138,7 @@
 					<<if $speech_attitude is "meek">>
 						"진통이 오고있어요," 당신은 몸을 웅크리고 배를 감싸 안으며 흐느낀다. "제-제발 도와주세요..."
 					<<elseif $speech_attitude is "bratty">>
-						"그냥 임신한게 아니지. 난-" 유난히 강한 진통이 오고, 당신은 얼굴을 찡그립니다. "진통이 시작됐어. 도와줄 거야, 어쩔거야?"
+						"그냥 임신한게 아니지. 난-" 유난히 강한 진통이 오고, 당신은 얼굴을 찡그린다. "진통이 시작됐어. 도와줄 거야, 어쩔거야?"
 					<<else>>
 						"진통이 시작됐어요," 당신은 간신히 몸을 추스리고 부두에 웅크린다. "도와줘요, 제발!"
 					<</if>>
@@ -1329,7 +1329,7 @@
 					"말썽부리면 어떤 벌을 받는지 알-" <<He_ nun>> 당신 다리 사이의 난장판을 보고 말을 멈춘다.
 					<br><br>
 
-					"제-제발 도와주세요." 당신은 속삭인다. 당신의 시야는 이미 흐리다.
+					"제-제발 도와주세요." 당신은 훌쩍인다. 당신의 시야는 이미 흐리다.
 					<<veteran_guard_ nun 0 cap>> 즉시 열쇠를 꺼내 당신의 감방 문을 연다. 무릎이 꺾이고, 배에서 고통이 치솟는 가운데, 힘센 팔이 당신을 붙잡는다. 감방에서 끌려나오는 순간 세상은 순식간에 사라진다.
 				<<else>>
 					감방 돌바닥에 뭔가 젖은 것이 튀는 소리가 당신의 주의를 사로잡는다. 다리가 젖어 있다. 진통이 시작됐다.
@@ -1372,7 +1372,7 @@
 					<<relaxed_guard_ ga 1 cap>> 당신 뒤로 다가오자, 죄수는 얼굴을 찌푸리지만 <<person1>><<his>> 일을 하러 떠난다. <<person2>><<He_ nun>> 당신의 다리 아래를 내려다보지만 아무 질문도 하지 못한다. 다시 배에서 통증이 밀려오자 당신은 몸을 구부린다.
 					<br><br>
 
-					"도-도와주세요... 아기가..." 당신이 속삭인다.
+					"도-도와주세요... 아기가..." 당신은 훌쩍인다.
 					<br><br>
 
 					<<relaxed_guard_ nun 1 cap>> 당신의 팔꿈치를 받치고 몸을 일으켜세운다.
@@ -1381,7 +1381,7 @@
 					"아이가 감옥에 가기엔 너무 어려, 그렇지? 어서. 그 작은 놈이 여기서 나오면 안경잽이한테 혼날거야 ." <<his>> 목소리는 거의 들리지 않는다. 고통에 머리가 욱신거리고, 몸을 똑바로 세우기도 힘들다. 모든 게 걷잡을 수 없이 흐릿해진다.
 				<<else>>
 					<<generate_relaxed_guard 0>><<person1>>
-					당신은 아래를 내려다본다. 허벅지를 타고 투명한 액체가 흘러내린다. 배가 욱신거립니다. 진통이 시작됐다.
+					당신은 아래를 내려다본다. 허벅지를 타고 투명한 액체가 흘러내린다. 배가 욱신거린다. 진통이 시작됐다.
 					<br><br>
 
 					"누구 없어요?" 당신은 문으로 가려고 발버둥 치며 소리친다. "도-도와주세요!" 당신은 문틀에 기대선다.
@@ -1396,7 +1396,7 @@
 					"젠장." <<relaxed_guard_ nun 0 cap>> 주위를 둘러보고, 당신 허리에 팔을 두른다. "가자, 죄수번호 144 주니어를 여기서 낳지는 않을 거야."
 					<br><br>
 
-					당신은 정신을 잃지 않으려 애쓰지만, 복통이 점점 더 심해집니다. <<relaxed_guard_ nun 0 cap>> 당신에게 말을 걸지만 당신은 너무 고통스러워서 그 말을 이해할 수 없다. 세상이 사라지고, 마지막으로 들리는 것은 공황 상태에 빠진 외침뿐이다.
+					당신은 정신을 잃지 않으려 애쓰지만, 복통이 점점 더 심해진다. <<relaxed_guard_ nun 0 cap>> 당신에게 말을 걸지만 당신은 너무 고통스러워서 그 말을 이해할 수 없다. 세상이 사라지고, 마지막으로 들리는 것은 공황 상태에 빠진 외침뿐이다.
 				<</if>>
 			<<case "prisonCanteen">>
 				<<if ["wake", "lunch", "dinner"].includes($prison.schedule)>>
@@ -1555,7 +1555,7 @@
 				<<person_ i>> 개집 안으로 들어온다. <<He_ nun>> 소리치며 철창을 때리고 손전등으로 안을 비춘다. <<He_ nun>> 당신을 보자 멈춘다.
 				<br><br>
 
-				"아, 미친!" <<he_ nun>> 소리치며 개집 밖으로 달려나간다. 당신은 도움의 손길이 올지 확신이 들지 않는다. 고통이 너무 심해 정신을 차릴 수가 없다.
+				"이런, 미친!" <<he_ nun>> 소리치며 개집 밖으로 달려나간다. 당신은 도움의 손길이 올지 확신이 들지 않는다. 고통이 너무 심해 정신을 차릴 수가 없다.
 				<br><br>
 
 				모든 게 너무 버거워진다. 눈이 깜빡거리고, 귓가에 소란스러운 소리가 울린다.
@@ -1624,119 +1624,119 @@
 				<</if>>
 			<<case "schoolJanitor">>
 				<<generate1>><<person1>>
-				You stumble to the ground as your contractions overwhelm you. You cry out in pain, but no one's around to hear you. You curl up into a ball and grip your stomach, whimpering for help. After what feels like an eternity, you see a janitor <<= ["schoolfrontcourtyard", "schoolrearcourtyard"].includes($bus) ? "exit the school, wheeling a trashbin" : "enter, mopping the floor">> as <<he>> sings along to the music blaring through <<his>> headphones.
+				당신은 진통이 온몸을 짓누르자 비틀거리며 바닥에 쓰러진다. 고통에 울부짖지만, 주변에 아무도 없다. 몸을 웅크리고 배를 움켜쥐며 도움을 요청하려 훌쩍인다. 영원처럼 느껴지는 시간이 흐른 후, 당신은 청소부가 헤드폰에서 흘러나오는 음악에 맞춰 노래를 부르며 <<= ["schoolfrontcourtyard", "schoolrearcourtyard"].includes($bus) ? "쓰레기통을 밀고 학교에서 나오는 것을 본다." : "들어와 바닥을 닦는 것을 본다.">>
 				<br><br>
 
-				<<His>> eyes land on you, and <<he>> freezes. "Holy..." <<He>> rips off <<his>> headphones and fumbles for <<his>> cellphone to call for help. The last thing you hear is <<his>> panicked voice, swearing at the phone operator, before the world fades to black.
+				<<His>> 눈이 당신에게 닿자, <<he_ nun>> 얼어붙는다. "이런..." <<He_ nun>> 헤드폰을 벗어던지고 도움을 요청하려 핸드폰을 더듬거린다. 마지막으로 들린 것은 전화 교환원에게 욕설을 퍼붓는 <<his>> 당황한 목소리다. 세상은 순식간에 어두워진다.
 			<<case "schoolPool">>
 				<<npc Mason>><<person1>>
-				You gasp as a contraction hits you, stealing the strength from your limbs. You briefly go under, and chlorinated water fills your mouth. You flail in a panic, struggling to keep your head above water. Suddenly, a pair of strong arms wrap around you, towing you out of the water and onto the slippery tile. Firm, unyielding hands turn you on your side as you hack up water.
+				당신은 숨이 막힐 듯 진통이 온몸을 강타하며 사지에 힘이 빠진다. 잠시 물속으로 가라앉고, 염소 처리된 물이 입안을 가득 채운다. 공황 상태에 빠져 허우적거리며 머리를 물 밖으로 내밀려고 안간힘을 쓴다. 갑자기 두 팔이 당신을 감싸 안으며 물 밖으로 끌어내 미끄러운 바닥으로 들어올린다. 단단하고 거침없는 손이 당신이 물을 토해내도록 옆으로 돌린다.
 				<br><br>
 
-				"Whoa, what happened?" Mason asks, looking concerned as <<he>> leans over you. "You need to be more careful, what if..." <<His>> voice trails off as <<he>> notices the way you carefully hold your abdomen. "Are you going into labour? Now?" Panicked, <<he>> turns and yells at a nearby student to run to Leighton's office for help.
+				"우와, 무슨 일이야?" 메이슨이 당신 위로 몸을 기울이고 걱정스러운 표정으로 묻는다. "넌 더 조심해야 돼, 만약에..." <<he_ ga>> 당신이 배를 조심스럽게 쥐는 모습을 알아차리자 목소리의 기세가 잦아든다. "너 진통하는 거야? 지금?" 당황한 <<he_ nun>> 돌아서서 근처 학생에게 레이튼의 사무실로 달려가 도움을 요청하라고 소리친다.
 				<br><br>
 
-				You watch the student dash out of the room with glazed eyes as Mason turns <<his>> attention back to you. "You're going to be alright. Just breathe with me, okay?" Mason tries to guide you through some breathing exercises, but you're unable to focus. As the world fades to black, you hear the sirens of an ambulance.
+				메이슨이 다시 당신에게 주의를 돌리자, 그 학생이 멍한 눈으로 방에서 뛰쳐나가는 모습이 눈에 들어온다. "괜찮을 거야. 나랑 같이 숨 쉬면 돼, 알았지?" 메이슨이 몇 가지 호흡법을 알려주지만, 당신은 집중할 수 없다. 세상이 어두워지고 구급차 사이렌 소리가 들린다.
 			<<case "schoolHallways">>
 				<<if Time.schoolDay and !["early", "late"].includes($schoolstate)>>
-					As your vision swims, you stagger, stumbling straight into the lockers with a bang. The noise attracts the attention of the students around you. Knees weak, you slide to the ground, clutching your abdomen. One student bolts from the scene, yelling for a teacher. You hear a flurry of footsteps and several panicked voices before everything fades away.
+					당신의 시야가 빙빙 돌고, 비틀거리며 사물함 안으로 쾅 부딪힌다. 소음에 주변 학생들의 시선이 쏠린다. 무릎이 풀려 배를 움켜쥐고 바닥으로 쓰러진다. 한 학생이 교사를 부르며 현장에서 뛰쳐나온다. 쿵 하는 발소리와 몇 명의 당황한 목소리가 들리더니 모든 것이 걷잡을 수 없이 사라진다.
 				<<else>>
 					<<pregnancyPassout "schoolJanitor">>
 				<</if>>
 			<<case "schoolLibrarian">>
-				You whimper as you clutch your stomach. "Whoa, whoa," the librarian says, giving your belly an alarmed look. "Just hang on, okay? I've got you. We'll get you to the hospital immediately." You give a weak, grateful smile and let your eyes drift shut. You pass out in the safety of the librarian's arms.
+				당신은 배를 움켜쥐며 훌쩍인다. "와, 와," 사서가 놀란 듯 배를 쳐다보며 말한다. "조금만 있어봐, 알겠지? 내가 도와줄게. 바로 병원으로 데려가줄게." 당신은 힘없이 감사의 미소를 지으며 눈을 감는다. 사서의 품에 안겨 안전하게 정신을 잃었다.
 			<<case "schoolScience">>
 				<<npc Sirris>><<person1>>
-				A powerful contraction grips you, and you cry out. The pain causes you to blackout for the briefest of seconds. When you open your eyes, you find yourself laying on the classroom floor, Sirris hovering over you. "진통이 시작됐다," <<he>> says, holding your hand as <<he>> fishes a cellphone out of <<his>> pocket. "You're going to be okay, I promise." <<He>> presses the phone to <<his>> ear and calls for an ambulance.
+				강렬한 진통이 당신을 사로잡고, 당신은 비명을 지른다. 고통 때문에 당신은 아주 짧은 몇 초 동안 정신을 잃었다. 눈을 뜨자 교실 바닥에 누워 있었고, 시리스는 당신 위에서 맴돈다. "진통이 시작됐어," <<he_ nun>> 당신의 손을 잡고 주머니에서 핸드폰을 꺼낸다. "괜찮을 거야, 약속해." <<he_ nun>> 핸드폰을 귀에 대고 구급차를 부른다.
 				<br><br>
-				As you wait for the ambulance, Sirris lectures on the miracle of childbirth. Some of your classmates look ill, while others can't tear their eyes away from you. The last thing you hear before passing out is <<his>> enthusiastic gushing about your ripened cervix.
+				구급차를 기다리는 동안 시리스는 출산의 기적에 대해 강의한다. 반 친구들 중 일부는 역겨운 듯 보이고, 다른 아이들은 당신에게서 눈을 떼지 못한다. 정신을 잃기 전 마지막으로 들은 말은 성숙한 자궁경부에 대한 <<his>> 열정적인 칭찬이다.
 			<<case "schoolToilets">>
-				All of a sudden, your vision blurs, and you collapse onto the tile floor. You try to call out, but you're unsure if anybody can hear you.
+				당신은 갑자기 시야가 흐려지고 타일 바닥으로 쓰러진다. 소리를 지르려고 하지만 누가 들을 수 있을지 확실치 않다.
 				<br><br>
 
-				You lay like that, carefully cradling your swollen belly, until
+				그렇게 누워 부풀어오른 배를 조심스럽게 감싸고 있는데, 
 				<<if Time.schoolDay and !["early", "late"].includes($schoolstate)>>
-					a group of students saunter out, chatting amongst themselves. One catches sight of you and freezes. They stare down at you, until you whimper out a plea for help. Snapping out of it, one student rushes to get help while the others crowd around you on the floor.
+					학생들이 모여서 서로 이야기를 나누며 어슬렁어슬렁 나온다. 한 학생이 당신을 보더니 얼어붙는다. 그들은 당신이 도움을 요청하며 훌쩍일 때까지 당신을 내려다본다. 정신을 차린 학생 한 명이 도움을 요청하러 달려가는 동안 다른 학생들은 바닥에 모여 당신 주위를 둘러싼다.
 					<br><br>
 
-					You catch sight of a teacher approaching before finally passing out.
+					당신이 기절하기 직전에 선생님이 다가오는 모습이 보인다.
 				<<else>>
 					<<generate1>><<person1>>
-					a janitor enters, trundling a mop bucket. <<He>> scowls at the puddle of fluid caused by your waters breaking. "You clean up one mess, then another one pops up. Kids these...days..." <<His>> eyes widen as they land on you. "Holy shit. Uh, hang on, um-" <<He>> fumbles for <<his>> cellphone and calls for an ambulance.
+					청소부가 대걸레통을 굴리며 들어온다. <<He_ nun>> 양수가 터져서 생긴 물웅덩이를 노려본다. "하나 치우면 또 하나 생기잖아. 요즘 애들은…" 당신을 본 <<His>> 눈이 커진다. "이런 미친. 어, 기다려 봐, 음-" <<He_ nun>> 핸드폰을 더듬거리며 구급차를 부른다.
 					<br><br>
 
-					You croak out a 'thank you' before the last vestiges of consciousness slip away.
+					의식의 마지막 흔적이 사라지기 전에 당신은 "고맙습니다" 라고 쉰 목소리로 말한다.
 				<</if>>
 			<<case "sewers">>
 				<<beastNEWinit 1 lizard>>
-				An awful pain shoots through your body, and liquid runs down your legs. 진통이 시작됐다. As you collapse, you see a shadow in the water move towards you. A giant <<beasttype>> emerges, bearing down on you. It looks like <<bhes>> about to strike, when all of a sudden, <<bhe>> pauses.
+				끔찍한 고통이 온몸을 휩쓸고, 다리에는 액체가 흘러내린다. 진통이 시작됐다. 쓰러지려는 순간, 물속의 그림자가 당신을 향해 다가오는 것이 보인다. 거대한 <<beasttype_ i>> 나타나 당신을 향해 달려든다. <<bhe_ ga>> 공격하려는 듯 보였지만, 갑자기 멈춘다.
 				<br><br>
 
 				<<if $monster is 1>>
-					"You... have eggs?" <<bhe>> asks.
+					"너... 알을 품었어?" <<bhe_ ga>> 묻는다.
 					<br><br>
 
-					<<bHe>> stares at your stomach, watching as you curl up and whimper in pain. The <<beasttype>> looks conflicted, but <<bhe>> slowly approaches and places a hand on your stomach. <<bHis>> face scrunches up, then <<bhe>> suddenly bends down and lifts you up with relative ease.
+					<<bHe_ nun>> 당신의 배를 응시하며 당신이 웅크리고 고통스럽게 훌쩍이는 모습을 지켜본다. <<beasttype_ un>> 혼란스러워 보이지만, 천천히 다가와 당신의 배에 손을 얹는다. <<bHis>> 얼굴이 일그러지더니, 갑자기 몸을 숙여 쉽게 당신을 들어 올린다.
 					<br><br>
 
-					"Not normal eggs," <<bhe>> hisses. "Other humans go to big building. I hear them talk in the bright-place below."  The <<beasttype>> carries you to a ladder and hauls you up it. Once at the surface, <<bhe>> slithers out.
+					"평범한 알이 아니다," <<bhe_ ga>> 쉬익 하는 소리를 낸다. “다른 인간들, 큰 건물로 간다. 나는 밝은 곳 아래에서 그들이 말하는 걸 들었다.” <<beasttype_ un>> 당신을 사다리까지 데려가더니 번쩍 들어 올려 위로 올린다. 지상에 도착하자, <<bhe_ nun>> 스르르 밖으로 빠져나간다.
 				<<else>>
-					<<bHe>> eyes you curiously, staring at your stomach before slowly approaching and wrapping <<bhis>> tail around you. <<bHe>> drags you to the nearest ladder and, with some struggling, pulls you up it. When <<bhe>> reaches the top, <<bhe>> headbutts the manhole cover until it opens enough for <<bhim>> to wriggle out.
+					<<bHe_ nun>> 호기심 어린 눈빛으로 당신의 배를 뚫어지게 쳐다보다가 천천히 다가와 꼬리로 당신을 감싼다. <<bHe_ nun>> 당신을 가장 가까운 사다리로 끌고 가, 힘겹게 사다리 위로 끌어올린다. 꼭대기에 도착하자, <<bhe_ nun>> 기어 나올 수 있을 만큼 맨홀 뚜껑을 박치기해 연다.
 				<</if>>
 
-				<<bHe>> dumps you next to the manhole before letting out a shrill, screeching hiss.
+				<<bHe_ nun>> 당신을 맨홀 옆에 내려놓고 날카롭게 쉬익거리는 소리를 낸다.
 				<br><br>
 
-				Somebody nearby yelps at the sound, and you hear footsteps coming your way. The <<beasttype>> retreats into the <<= $monster is 1 ? "sewers, glancing back at you briefly before pulling the manhole cover back into place" : "sewers">>.
+				근처에서 누군가가 소리를 지르고, 당신에게 다가오는 발소리가 들린다. <<beasttype_ un>> <<= $monster is 1 ? "잠시 당신을 돌아본 후 맨홀 뚜껑을 다시 제자리에 끼우고 하수구로 돌아간다." : "하수구로 돌아간다">>.
 				<br><br>
 
-				Everything fades to black as someone crouches by you.
+				누군가가 당신 옆에 웅크리고 앉자 모든 것이 검게 변한다.
 			<<case "adultShop">>
-				You stumble, barely catching yourself on a shelf laden with dildos. You cradle your belly as you slide to the ground, groaning with pain.
+				당신은 비틀거리며 딜도가 가득 쌓인 선반에 간신히 기댄다. 배를 감싸 안고 바닥으로 미끄러지듯 내려가며 고통에 신음한다.
 
 				<<if $adultshopstate is "closed">>
 					<<generate1>><<person1>>
-					Using what little strength you have, you try to crawl to the door. You weakly reach for the handle, but can't reach it from the floor. You whimper.
+					당신은 남은 힘을 다해 문으로 기어가려 애쓴다. 힘없이 손잡이를 향해 손을 뻗지만 바닥에서는 닿지 않는다. 당신은 훌쩍인다.
 					<br><br>
 
-					The door swings open, and a guard scowls down at you. "What do we have here? A little rat thief, trying to make off with some fuck toys?" <<he>> says. <<He>> shines a torch on you, and <<his>> eyes widen when <<he>> notices your state.
+					문이 활짝 열리고 경비원이 당신을 쏘아본다. "여기 뭐가 있는 거지? 작은 쥐새끼가 섹스 장난감을 훔쳐 가려는 건가?" <<he_ ga>>가 말한다. <<he_ nun>> 당신에게 손전등을 비추고, 당신의 상태를 알아채자 <<his>> 눈이 커진다. 
 					<br><br>
 
-					"Shit," <<he>> mutters as <<he>> takes out <<his>> phone. "I'll give you a pass this time, but next time you won't be so lucky." The last thing you hear is <<him>> calling for an ambulance, then the world fades to black.
+					"젠장," <<he_ ga>> 핸드폰을 꺼내며 중얼거린다. "이번엔 봐줄게. 하지만 다음엔 그렇게 운이 좋지 않을 거야." 마지막으로 들리는 소리는 <<he_ ga>> 구급차를 부르는 소리였고, 그 후 세상은 깜깜해졌다.
 
 				<<else>>
-					You hear Sirris calling for you from the back room. After a few moments, you hear Sirris enter the shop proper, followed by a shout of surprise as <<nnpc_his "Sirris">> eyes land on you.
+					뒷방에서 시리스가 당신을 부르는 소리가 들린다. 잠시 후, 시리스가 가게 안으로 들어오는 소리가 들리고, <<nnpc_his "Sirris">> 눈이 당신에게 닿자 놀란 비명이 울린다.
 					<br><br>
 
-					Within moments, Sirris is kneeling at your side, phone to <<nnpc_his "Sirris">> ear as <<nnpc_he "Sirris">> tries to hold your attention.
+					잠시 후 <<nnpc_he_ ga "Sirris">> 당신 곁에 무릎을 꿇고, 한 손엔 전화를 귀에 댄 채, 당신의 의식을 붙잡아두려 애쓴다.
 
 					<<if $adultshopstate is "sydney">>
-						Behind <<nnpc_him "Sirris">>, you can see Sydney hovering in worry. You try to give <<nnpc_him "Sydney">> a reassuring smile, but you can't hold on any longer. You pass out.
+						<<nnpc_his "Sirris">> 뒤에서, 시드니가 걱정에 잠긴 것이 보인다. 시드니를 안심시키는 미소를 지어 보려 애쓰지만, 더 이상 참을 수 없다. 당신은 정신을 잃는다.
 					<</if>>
 				<</if>>
 			<<case "office">>
 			<<case "island">>
 				<<endevent>>
-				A spasm of pain wracks your body, and you cry out. 진통이 시작됐다.
+				극심한 고통이 몸을 뒤덮고, 당신은 비명을 지른다. 진통이 시작됐다.
 				<br><br>
 
-				Figures emerge from the trees, weapons held ready. They lower them when they see your state, and their motions become panicked.
+				나무에서 무기를 든 사람들이 나타난다. 그들은 당신의 상태를 보고 무기를 내리고, 당황한 듯 움직인다.
 				<br><br>
 				<<if $islander_language gte 100>>
-					"I think <<pshe>> going into labour," one of the islanders says.
+					"<<pshe_ ga>> 진통중인 것 같아," 섬사람 중 한 명이 말한다.
 					<br>
-					"Fuck! You're right!"
+					"씨발! 맞아!"
 					<br>
-					"Get the druids, now!"
+					"사제를 데려와! 당장"
 				<<elseif $islander_language gte 50>>
-					They call for help. It's strange, but in your pain you can almost determine the meaning behind their words. It floats at the edge of awareness.<<gggcomprehension>><<islander_language 30>>
+					그들은 도움을 요청한다. 이상하게도, 고통 속에서 당신은 그들의 말 속에 담긴 의미를 거의 알아들을 수 있다. 의식의 가장자리에 떠 있는 것 같다. <<gggcomprehension>><<islander_language 30>>
 				<<else>>
-					They shout something in their incomprehensible language. It's strange, but in your pain you feel the meaning behind them. They're calling for help.<<gggcomprehension>><<islander_language 30>>
+					그들은 알아들을 수 없는 언어로 무언가를 외친다. 이상하게도, 당신은 고통 속에서 그 말 뒤에 숨겨진 의미를 느낀다. 그들은 도움을 요청하고 있다.<<gggcomprehension>><<islander_language 30>>
 				<</if>>
 				<br><br>
-				The figures fade into fog as you pass out.
+				당신이 의식을 잃자 그 인물들은 안개 속으로 사라진다.
 			<<default>>
-				With your waters broken, you're too weak to continue.
+				당신의 양수가 터져 더 싸울 수 없을 정도로 약해졌다.
 		<</switch>>
 
 		/*Links for alternative pregnancy birth events*/
@@ -1749,40 +1749,40 @@
 					<<link [[다음|Pregnancy Birth Prison]]>><<set $stress -= 5000>><<endevent>><</link>>
 				<<case "tentacleworld">>
 					<<if $tentacleEntrance is "mirror">>
-						You find yourself laying in front of your bedroom mirror. Everything fades to black.
+						당신은 침실 거울 앞에 누워 있는 자신을 발견한다. 모든 것이 검게 변한다.
 						<br><br>
 
 						<<link [[다음|Pregnancy Birth Hospital Passout]]>><<set $stress -= 5000>><<endevent>><</link>>
 					<<else>>
-						You scream. You're met with your own echoing voice. Again and again, you scream until your throat is hoarse. <span class="red">No one comes for you.</span> <<trauma 50>><<gggtrauma>>
+						당신은 비명을 지른다. 메아리치는 당신의 목소리에 맞닥뜨린다. 목이 쉴 때까지 계속해서 비명을 지른다. <span class="red">아무도 오지 않는다.</span> <<trauma 50>><<gggtrauma>>
 						<br><br>
 
-						Overwhelmed by pain and fear, you black out.
+						당신은 고통과 두려움에 압도되어 정신을 잃는다.
 						<br><br>
 
 						<<link [[다음|Pregnancy Birth Asylum]]>><<set $stress -= 5000>><<endevent>><</link>>
 					<</if>>
 				<<case "tentacleforest" "hookah">>
 					<<if _noWake>>
-						You're caught off guard by a sudden pain. A contraction. You've gone into labour. You stumble to the floor.
+						당신은 갑작스러운 통증에 정신이 아찔하다. 진통이다. 진통이 시작된 것이다. 당신은 비틀거리다 바닥에 주저앉는다.
 						<br><br>
 
-						Your vision quickly fades, and when it returns, you feel as though time has passed.
+						당신은 시야는 금세 흐려지고, 시야가 돌아오자 시간이 흐른 듯한 느낌이 든다.
 						<br><br>
 					<<else>>
-						You snap awake in the parlour.
+						당신은 응접실에서 깨어난다.
 					<</if>>
 					<<if $hookah_state is 1>>
 						<<loadNPC 0 "hookah">><<person1>>
-						The hookah <<hookah_master>>'s face is right above you, looking concerned. <<He>> barks orders around.
+						<<hookah_master_ yi>> 얼굴이 걱정스러운 표정으로 당신 바로 위에 있다. <<He_ nun>> 주위에 명령한다.
 						<br><br>
 
-						"...and open that window. Air it out in here for <<phim>>. Jiggle the lock. It's supposed to be hard to open! Yes, yes, you'll get a full refund..."
+						"...그리고 저 창문을 열어. <<phe_ ga>> 바람 좀 쐬게. 자물쇠 좀 흔들어 봐. 원래 열기 힘들잖아! 그래, 그래, 전액 환불해 줄게..."
 						<br><br>
 
-						<<His>> voice becomes distant, and darkness creeps into the corners of your vision as the pain of a contraction hits you. Your own scream is the last thing you hear.
+						<<His>> 목소리가 멀어지고, 진통의 고통이 밀려오면서 시야 구석구석에 어둠이 스며든다. 마지막으로 들리는 소리는 당신의 비명뿐이다.
 					<<else>>
-						Someone is pounding on the door. Your vision starts to fade again to the sound of sirens.
+						누군가 문을 두드린다. 사이렌 소리에 시야가 다시 흐려진다.
 					<</if>>
 					<br><br>
 
@@ -1791,35 +1791,35 @@
 					<<if $_pregnancy.type is "wolf">>
 						<<beastNEWinit 1 wolf>>
 						<<if $monster is 1>>
-							A <<beasttype>> approaches you, rushing to your side and putting <<bhis>> arms behind you for support.
+							<<beasttype_ i>> 당신 옆으로 달려와 <<bhis>> 팔을 당신 뒤로 뻗어 지지한다.
 							<<if $syndromewolves is 1>>
-								You've seen <<bhim>> at the cave before. "<<pPackbrother>>'s pups are coming," <<bhe>> says. "Hurry." <<bHe>> lets you lean against <<bhim>> as you waddle your way home.
+								늑대 동굴에서 <<bhim_ ul>> 본 적이 있다. "<<pPackbrother>>의 새끼들이 태어나려고 해." <<bhe_ ga>>가 말한다. "서둘러." <<bHe_ nun>> 당신이 뒤뚱거리며 집으로 가는 동안 <<bhim_ 에게>> 기대게 해 준다.
 							<<else>>
-								You don't know why, but you feel safe going with <<bhim>>. "Your pups are coming," <<bhe>> says. "You'll be safe with my pack." <<bHe>> lets you lean against <<bhim>> as you waddle your way towards what you hope is safety.
+								이유는 모르겠지만, <<bhim_ gwa>> 함께 가는 게 안전하다고 느낀다. "네 강아지들이 태어나려고 해." <<bhe>>가 말한다. "내 무리와 함께라면 안전할 거야." <<bHe_ nun>> 당신이 뒤뚱거리며 가는 동안 <<bhim_ 에게>> 기대 안전한 곳으로 데려다 준다.
 							<</if>>
 						<<else>>
-							A <<beasttype>> approaches you, nuzzling your hand.
+							<<beasttype_ i>> 당신에게 다가와 당신의 손을 코로 비빈다.
 							<<if $syndromewolves is 1>>
-								You've seen <<bhim>> at the cave before. You lean against <<bhis>> back as you limp home together.
+								늑대 동굴에서 <<bhim_ ul>> 본 적이 있다. 당신은 <<bhis>> 등에 기대어 절뚝거리며 함께 집으로 돌아간다.
 							<<else>>
-								You don't know why, but you feel safe going with <<bhim>>. You lean against <<bhis>> back as you limp towards what you hope is safety.
+								이유는 모르겠지만, <<bhim_ gwa>> 함께 가는 게 안전하다고 느낀다. 당신은 <<bhis>> 등에 기대어 절뚝거리며 함께 안전한 곳으로 돌아간다.
 							<</if>>
 						<</if>>
-						It's difficult to keep moving through the pain. Eventually your legs give out, your vision following soon after,
-						<<if $monster is 1>>but strong arms holding you keep you from harm.<<else>>but you fall gently onto soft fur.<</if>>
+						고통 속에서 계속 움직이는 것은 힘들다. 결국 다리가 마비되고, 곧이어 시야도 흐려지지만,
+						<<if $monster is 1>>튼튼한 팔이 당신을 붙잡아 다치지 않도록 지켜준다.<<else>>당신은 푹신한 털에 부드럽게 떨어진다.<</if>>
 						<br><br>
 
 						<<link [[다음|Pregnancy Birth Wolf Rescue]]>><<set $stress -= 5000>><<endevent>><</link>>
 					<<else>>
 						<<endevent>>
 						<<generate1>><<person1>>
-						You hear a <<personsimple>>'s voice. "Are you okay, there?" <<he>> asks as <<he>> approaches. <<He>> looks vaguely familiar. There's an axe along <<his>> back. You think you stopped and talked to <<him>> as <<he>> was chopping wood once.
+						<<personsimple>>의 목소리가 들린다. "거기 괜찮으세요?"  <<he_ ga>> 다가오며 묻는다. <<He_ nun>> 어딘가 낯이 익다. <<his>> 등에 도끼가 꽂혀 있다. <<he_ ga>> 나무를 자르던 중 멈춰 서서 말을 건넨 것 같다.
 						<br><br>
 
-						You're barely able to talk as another contraction hits, more painful than the previous ones. The woods<<personsimple>> takes off <<his>> coat and gently puts it over your shoulders.
+						당신은 간신히 말을 잇는 순간, 이전보다 더 고통스러운 진통이 다시 찾아온다. 숲의 <<personsimple_ i>> 코트를 벗어 당신에게 살며시 걸쳐준다.
 						<br><br>
 
-						"Come on, lean on me. I'll take you to the hospital." Your vision fades before you can take the next step.
+						"어서, 기대세요. 병원으로 데려다줄게요." 발을 내딛기도 전에 당신의 시야가 흐려진다.
 						<br><br>
 
 						<<link [[다음|Pregnancy Birth Hospital Rescue]]>><<set $stress -= 5000>><<endevent>><</link>>
@@ -2012,24 +2012,24 @@
 			<<switch $_pregnancy.type>>
 				<<case "human">>
 					<<if $_num gt 1>>
-						<<set $_text_output to ($_num is 3 ? "triplets" : "twins")>>
+						<<set $_text_output to ($_num is 3 ? "세 쌍둥이" : "쌍둥이")>>
 					<<else>>
-						<<set $_text_output to "baby">>
+						<<set $_text_output to "아기">>
 					<</if>>
 				<<case "wolf">>
 					<<if $_num lte 3>>
-						<<set $_text_output to ($_num is 1 ? "pup" : "pups")>>
+						<<set $_text_output to ($_num is 1 ? "강아지" : "강아지들")>>
 					<<else>>
-						<<set $_text_output to "litter">>
+						<<set $_text_output to "강아지들">>
 					<</if>>
 				<<default>>
-					<<set $_text_output to ($_num gt 1 ? "babies" : "baby")>>
+					<<set $_text_output to ($_num gt 1 ? "아기들" : "아기")>>
 			<</switch>>
 		<<else>>
-			<<set $_text_output to ($_pregnancy.awareOfMultiple && $_pregnancy.fetus.length gt 1 ? "babies" : "baby")>>
+			<<set $_text_output to ($_pregnancy.awareOfMultiple && $_pregnancy.fetus.length gt 1 ? "아기들" : "아기")>>
 		<</if>>
 	<<else>>
-		<<set $_text_output to ($_pregnancy.awareOfMultiple && $_pregnancy.fetus.length gt 1 ? "babies" : "baby")>>
+		<<set $_text_output to ($_pregnancy.awareOfMultiple && $_pregnancy.fetus.length gt 1 ? "아기들" : "아기")>>
 	<</if>>
 <</silently>><<print $_text_output>><</widget>>
 
