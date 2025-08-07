@@ -88,9 +88,9 @@
 
 길이 굽어져있다. 시야에서 벗어나려 멀리 달릴 필요는 없다. 당신은 트레일러에서 뛰어내려 모퉁이를 돌아 달린다.
 <<if $athleticsSuccess>>
-	<span class="green">당신은 발견되지 못한 것 같다.</span> 당신은 트랙터 엔진 소리가 사라질 때까지 계속 달린다.
+	<span class="green">당신은 발견되지 않은 것 같다.</span> 당신은 트랙터 엔진 소리가 사라질 때까지 계속 달린다.
 <<else>>
-	<span class="red">트랙터가 경적을 울린다.</span> 당신은 발견되었다. 당신은 트랙터 엔진 소리가 사라질 때까지 계속 달린다. 당신의 낯이 뜨거워진다.<<fameexhibitionism 1>><<gtrauma>><<gstress>>
+	<span class="red">트랙터가 경적을 울린다.</span> 당신은 발견되었다. 당신은 트랙터 엔진 소리가 사라질 때까지 계속 달린다. 당신의 얼굴이 화끈거린다.<<fameexhibitionism 1>><<gtrauma>><<gstress>>
 	<<trauma 6>><<stress 6>>
 <</if>>
 <br><br>
@@ -114,7 +114,7 @@
 	<span class="red">뒤에서 자동차가 모퉁이를 돌아 돌진해 오기 전,</span> 유일한 경고는 엔진의 굉음뿐이었다. 당신은 적나라하게 보여진다. <span class="lewd">숨을 곳은 어디에도 없다.</span> <<covered>>
 	<br><br>
 
-	<<generate1>><<generate2>><<person1>> 운전석에는 <<person_ i>> 한 명이 앉아 있고, 그 옆에는 <<person2>><<person>>이 <<person1>><<him_ wa>> 함께 앉아 있다. 그들이 큰 소리로 웃지만, 당신은 듣지 못한다.
+	<<generate1>><<generate2>><<person1>> 운전석에는 <<person_ i>> 한 명이 앉아 있고, 그 옆에는 <<person2>><<person_ i>> <<person1>><<him_ wa>> 함께 앉아 있다. 그들이 큰 소리로 웃지만, 당신은 듣지 못한다.
 	<br><br>
 
 	당신은 선택의 여지 없이 트레일러에서 뛰어내려 달린다. 운전자가 당신을 발견하자 경적을 울린다. 당신의 얼굴이 화끈거리고, 두 엔진 소리가 등 뒤에서 사라질 때까지 계속 달린다.<<gtrauma>><<gstress>><<trauma 6>><<stress 6>><<fameexhibitionism 1>>
@@ -129,7 +129,7 @@
 :: Farmland Exposed Sprint
 <<effects>>
 
-당신은 돌아서서 길을 따라 전력 질주한다. 뒤에서 흥분해서 꿀꿀거리는 소리가 들린다. 당신은 어깨 너머를 흘끗 본다. <span class="pink"> <<beastsplural_ i>> 당신을 쫓아온다!</span>
+당신은 돌아서서 길을 따라 전력 질주한다. 뒤에서 흥분해서 꿀꿀거리는 소리가 들린다. 당신은 어깨 너머를 흘끗 본다. <span class="pink"><<beastsplural_ i>> 당신을 쫓아온다!</span>
 <br><br>
 <<if $athleticsSuccess>>
 	당신은 최대한 빠르게 달리고 <span class="green"><<beastsplural>>보다 앞서나간다.</span> <<personsimple_ i>> 그들을 다시 통제할 수 있을만큼 충분한 시간이다.
@@ -141,7 +141,7 @@
 	<<link [[다음|Farmland]]>><<endevent>><<set $eventskip to 1>><</link>>
 	<br>
 <<else>>
-	당신은 최대한 빠르게 달리지만, <span class="red"> <<beastsplural_ i>> 더 빨랐다.</span> 그들은 당신의 양쪽에서 달려오다가 당신 앞으로 달려 당신을 가두고 멈춘다.
+	당신은 최대한 빠르게 달리지만, <span class="red"><<beastsplural_ i>> 더 빨랐다.</span> 그들은 당신의 양쪽에서 달려오다가 당신 앞으로 달려 당신을 가두고 멈춘다.
 	<br><br>
 
 	"무슨 일 있어요?" <<personsimple_ i>> 뒤에서 소리친다. <<He_ ga>> 곧 당신을 발견할 것이다!
@@ -165,7 +165,7 @@
 쉽지 않았다. <<beastsplural_ un>> 당신에게 길을 내주려 하지 않았고, 당신이 너무 뒤쳐지면 <<personsimple_ i>> 당신을 볼 것이다.
 <br><br>
 
-<<link [[난입해 길을 뚫는다|Farmland Exposed Barge]]>><</link>><<physiquedifficulty 1 16000>>
+<<link [[밀쳐서 길을 뚫는다|Farmland Exposed Barge]]>><</link>><<physiquedifficulty 1 16000>>
 <br>
 <<link [[부드럽게 대한다|Farmland Exposed Gentle]]>><</link>><<tendingdifficulty 1 1100>>
 <br>
@@ -177,7 +177,7 @@
 <<effects>>
 
 <<if $physiqueSuccess>>
-	당신은 군중을 밀치며 나아가고, <span class="green"><<beastsplural_ ul>> 옆으로 밀어낸다.</span> 당신은 가장자리에 도달한다. 당신 앞에 도로에서 멀어지는 길이 있다.
+	당신은 무리를 밀치며 나아가고, <span class="green"><<beastsplural_ ul>> 옆으로 밀어낸다.</span> 당신은 가장자리에 도달한다. 당신 앞에 도로에서 멀어지는 길이 있다.
 	<br><br>
 
 	<<personsimple_ un>> 이탈한 <<beasttype_ ul>> 막으려 돌아선다. 당신은 <<he_ ui>> 주의가 산만해진 사이 안전한 길을 따라 달린다.
@@ -186,7 +186,7 @@
 	<<link [[다음|Farmland]]>><<set $eventskip to 1>><<endevent>><</link>>
 	<br>
 <<else>>
-	당신은 군중을 밀치며 나아가려 하지만, <span class="red"> <<beastsplural_ un>> 가 너무 무거웠고,</span> 너무 흥분해있었다.
+	당신은 무리를 밀치며 나아가려 하지만, <span class="red"> <<beastsplural_ un>> 가 너무 무거웠고,</span> 너무 흥분해있었다.
 	<br><br>
 
 	당신이 다른 방법을 고민하던 중, 앞에서 덜컹거리는 소리가 들린다. 무리가 여러 대의 주차된 트럭 뒤쪽으로 몰린다. 문이 당신 뒤에서 닫히고, 당신은 <<beastsplural>> 사이에 갇혀 그 중 하나로 강제로 들어가게 된다.
@@ -226,7 +226,7 @@
 당신은 <<personsimple_ i>> 굽은 길을 돌아오는 순간 <<he_ 에게>> 말을 건다. <<He_nun>> 당신을 바라본다.
 
 <<if random(1, 2) is 2>>
-	그리고 당신의 <<nudity_ rul>> 곁눈질하며 웃는다. "안 좋은 일을 겪고있나보네요," <<he_ nun>> 당신 주위로 <<beastsplural_ i>> 몰려드는 가운데 가까이 다가온다. <<he_ ga>> 당신의 팔을 붙잡고, 땅에 눕히려고 하지만, 도망칠 곳은 없다.
+	그리고 당신의 <<nudity_ rul>> 곁눈질하며 웃는다. "안 좋은 일을 겪고 있나 보네요," <<beastsplural_ i>> 당신 주위로 몰려드는 와중 <<he_ ga>> 가까이 다가온다. <<he_ nun>> 당신의 팔을 붙잡아 땅에 눕히려고 하지만, 도망칠 곳은 없다.<<nudityPostend>>
 	<br><br>
 
 	<<saveNPC 3 farmland_exposed_1>>
@@ -416,10 +416,10 @@
 당신은 마지막 돼지가 달려나가는 것을 기다린다. <<covered>> 두 사람이 가까이 다가온다.
 <br><br>
 
-"평소와는 다른 돼지네," <<person2>><<person_ i>> 씩 웃으며 노트에 뭔가 적는다. "우리가 들어가면 안 되는 곳에 몰래 들어가려는 건 아니지?"
+"평소와는 다른 돼지네," <<person2>><<person_ i>> 씩 웃으며 수첩에 뭔가 적는다. "우리가 들어가면 안 되는 곳에 몰래 들어가려는 건 아니지?"
 <br><br>
 
-"우리가 몸 수색 좀 해도 불평하지 않을걸," <<person1>><<person_ i>> 말했다. "불법적인 물건을 가지고 있는지 확실히 해야겠어."
+"우리가 몸 수색 좀 해도 불평하지 않을걸," <<person1>><<person_ i>> 말한다. "불법적인 물건을 가지고 있는지 확실히 해야겠어."
 <br><br>
 
 <<link [[협조한다 (0:10)|Farmland Pigs Cooperate]]>><<pass 10>><<arousal 1200>><<stress 6>><<sub 1>><</link>><<gstress>><<garousal>>
@@ -435,7 +435,7 @@
 :: Farmland Pigs Cooperate
 <<effects>>
 
-당신이 <<person2>><<persons>> 질문에 답하는 동안, <<person1>><<person_ un>> 그 틈을 이용해 당신의 몸을 만지작거리며, 당신의 <<breasts_ wa>> <<bottom_ ul>> 더듬는다.
+당신이 <<person2>><<persons_ yi>> 질문에 답하는 동안, <<person1>><<person_ un>> 그 틈을 이용해 당신의 몸을 만지작거리며, 당신의 <<breasts_ wa>> <<bottom_ ul>> 더듬는다.
 <<if $player.penisExist and $player.vaginaExist>>
 	당신의 <<penis_ wa>> <<pussy_ nun>> 둘 다 안전하지 못하다.
 <<elseif $player.penisExist>>
@@ -452,7 +452,7 @@
 	<<person1>><<person_ i>> 당신이 바닥에 주저앉도록 당신을 놓아주자, 두 사람이 웃음을 터트린다. "얘는 그냥 걸레네," <<person2>><<person_ i>> 말한다. "그냥 돌려보내."<<gstress>><<gtrauma>><<trauma 6>><<stress 6>>
 	<br><br>
 <<else>>
-	당신은 끊임없는 탐색에 몸이 반응하는 게 느껴진다. 얼굴이 붉어지지만, <<person1>><<person_ un>> 더이상 밀어붙이지 않고 당신을 놔준다.
+	당신은 끊임없는 탐색에 몸이 반응하는 게 느껴진다. 얼굴이 붉어지지만, <<person1>><<person_ un>> 더 이상 밀어붙이지 않고 당신을 놔준다.
 	<br><br>
 	"얘는 양아치가 아니야," <<person2>><<person_ i>> 말한다. "그냥 돌려보내."
 	<br><br>
@@ -515,9 +515,9 @@
 	당신은 잠시 기다린 후, 길 쪽으로 나아간다. <span class="red">발목 주위에 뭔가 죄이는 듯한 느낌이 든다.</span> 다른 쪽 발목도 마찬가지다. 울타리 속에서 가지들이 튀어나와 당신의 주변을 바짝 감싼다.
 	<br><br>
 
-	<<link [[진정시키다|Farmland Exposed Soothe]]>><</link>><<tendingdifficulty 1 1000>>
+	<<link [[진정시킨다|Farmland Exposed Soothe]]>><</link>><<tendingdifficulty 1 1000>>
 	<br>
-	<<link [[버티다|Farmland Exposed Tentacles]]>><<set $molestationstart to 1>><</link>>
+	<<link [[버틴다|Farmland Exposed Tentacles]]>><<set $molestationstart to 1>><</link>>
 	<br>
 <<else>>
 	당신은 잠시 기다린 후 빠져나간다.
@@ -607,7 +607,7 @@
 	<<generate1>><<generate2>><<generate3>><<generate4>><<generate5>>
 	<<person1>>
 	<<fameexhibitionism 5>>
-	차가 굽은 길을 돌아온다. 운전석에는 <<person_ i>> 한 명이 앉아 있고, 그 옆에는 <<person2>><<person_ i>> <<person1>><<him_ wa>> 함께 앉아 있다. 당신은 그 뒤편에서 움직임을 발견한다.
+	차가 굽은 길을 돌아온다. 운전석에는 <<person_ i>> 한 명이 앉아 있고, 그 옆에는 <<person2>><<person_ i>> <<person1>><<him_ wa>> 함께 앉아 있다. 그 뒤편에 무언가 움직이는 게 보인다.
 	<br><br>
 
 	차가 속도를 낮추고, <<person3>><<person_ i>> 지나가며 창문으로 몸을 내민다. 당신은 <<him_ yi>> 뒤에서 더 잘 보려고 목을 빼는 두 명을 더 발견한다.
@@ -619,7 +619,7 @@
 	<<generate1>><<generate2>><<generate3>><<generate4>>
 	<<person1>>
 	<<fameexhibitionism 4>>
-	차가 굽은 길을 돌아온다. 운전석에는 <<person_ i>> 한 명이 앉아 있고, 그 옆에는 <<person2>><<person_ i>> <<person1>><<him_ wa>> 함께 앉아 있다. 당신은 그 뒤편에서 움직임을 발견한다. <<person3>><<person_ gwa>> <<person4>><<person_ i>> 앉아있다.
+	차가 굽은 길을 돌아온다. 운전석에는 <<person_ i>> 한 명이 앉아 있고, 그 옆에는 <<person2>><<person_ i>> <<person1>><<him_ wa>> 함께 앉아 있다. 그 뒤편에 무언가 움직이는 게 보인다. <<person3>><<person_ gwa>> <<person4>><<person_ i>> 앉아있다.
 	<br><br>
 
 	네 사람 모두 지나가면서 당신을 쳐다본다.
@@ -628,7 +628,7 @@
 	<<generate1>><<generate2>><<generatey3>>
 	<<person1>>
 	<<fameexhibitionism 3>>
-	차가 굽은 길을 돌아온다. 운전석에는 <<person_ i>> 한 명이 앉아 있고, 그 옆에는 <<person2>><<person>>이 <<person1>><<him_ wa>> 함께 앉아 있다. 당신은 그 뒤편에서 움직임을 발견한다.
+	차가 굽은 길을 돌아온다. 운전석에는 <<person_ i>> 한 명이 앉아 있고, 그 옆에는 <<person2>><<person_ i>> <<person1>><<him_ wa>> 함께 앉아 있다. 그 뒤편에 무언가 움직이는 게 보인다.
 	<br><br>
 
 	앞에 앉은 두 사람은 눈이 돌아가 반대편 울타리에 거의 부딪힐 뻔한다. 그들이 지나가자 당신의 마음이 가라앉는다. 뒤에 앉은 <<person3>><<person_ un>> <<his_ yi>> 얼굴을 거의 창에 붙이고 있는데, 당신을 똑바로 쳐다본다. 당신은 <<him_ rul>> 학교에서 본 적 있다.
@@ -641,7 +641,7 @@
 	<<generate1>><<generate2>>
 	<<person1>>
 	<<fameexhibitionism 2>>
-	차가 굽은 길을 돌아온다. 운전석에는 <<person_ i>> 한 명이 앉아 있고, 그 옆에는 <<person2>><<person>>이 <<person1>><<him_ wa>> 함께 앉아 있다. 그들은 지나가면서 당신을 멍하니 바라본다.
+	차가 굽은 길을 돌아온다. 운전석에는 <<person_ i>> 한 명이 앉아 있고, 그 옆에는 <<person2>><<person_ i>> <<person1>><<him_ wa>> 함께 앉아 있다. 그들은 지나가면서 당신을 멍하니 바라본다.
 	<br><br>
 <<else>>
 	<<generate1>>
@@ -680,7 +680,7 @@
 <<effects>>
 
 <<if $physiqueSuccess>>
-	당신은 있는 힘껏 손잡이를 민다. <span class="green">그리고 문이 열린다.</span> 당신은 결국 문을 열고 안전을 위해 안으로 들어간다.<<lstress>><<stress 6>>
+	당신이 있는 힘껏 손잡이를 밀자, <span class="green">문이 열린다.</span> 당신은 문을 밀치듯이 열어제끼고 마침내 안전한 곳에 들어선다.<<lstress>><<stress 6>>
 	<br><br>
 
 	<<link [[다음|Farm Cottage]]>><</link>>
@@ -709,10 +709,10 @@
 :: Farm Builders Exposed Cottage Hide
 <<effects>>
 
-당신은 오두막 옆으로 달려간다. 당신은 시간내로 도착해 오두막과 두꺼운 울타리에 웅크려 숨어있다.
+당신은 오두막 옆으로 달려간다. 당신은 시간 내로 도착해 웅크려 숨는다. 한쪽 면에선 오두막이 당신을 가려 주고, 반대편에서는 두터운 산울타리가 당신을 가려 준다.
 <br><br>
 
-이곳에선 오두막에 들어갈 수 없다. 창문을 깨 큰소리를 내야 한다. 당신은 숨어 있던 곳에서 나오기 전에 마당에서 들리는 목소리가 사라질 때까지 기다린다.
+이곳에선 오두막에 들어갈 수 없다. 창문을 깨 큰 소리를 내야 한다. 당신은 숨어 있던 곳에서 나오기 전에 마당에서 들리는 목소리가 사라질 때까지 기다린다.
 <br><br>
 
 <<link [[다음|Farm Work]]>><</link>>
